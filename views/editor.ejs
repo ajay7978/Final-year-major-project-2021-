@@ -1,5 +1,0 @@
-var qr = require('qr-encode')
-var img = new Image();
-var dataURI = qr(<%= hash %>, {type:6, size : 6, level: 'Q'});
-img.src=dataURI
-document.getElementById("qrcode").appendChild(img)
